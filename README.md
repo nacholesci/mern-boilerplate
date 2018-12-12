@@ -1,1 +1,1 @@
-Use 'npm install && npm start' to het started
+Use 'npm install && npm start' to get started
