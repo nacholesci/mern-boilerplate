@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node src/server/app.js",
+    "prestart": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -17,25 +18,28 @@
   },
   "homepage": "https://github.com/nacholesci/mern-boilerplate#readme",
   "dependencies": {
+    "@webpack-cli/init": "^0.1.2",
+    "babel-cli": "^6.26.0",
+    "css-loader": "^2.0.0",
     "express": "^4.16.4",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack-dev-server": "^3.1.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
-  },
-  "scripts": {
-   "start": "babel-node src/server/app.js"
+    "react-dom": "^16.6.3",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   }
 }
